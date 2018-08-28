@@ -1,0 +1,24 @@
+spring:
+  liquibase:
+    enabled: false
+  jpa:
+    properties:
+      hibernate:
+        cache:
+          use_second_level_cache: false
+    open-in-view: true
+    generate-ddl: true
+  freemarker:
+    check-template-location: false
+  activiti:
+    check-process-definitions: false
+  aop:
+    proxy-target-class: false
+server:
+  port: 9999
+  servlet:
+    context-path: "/activiti-app"
+
+
+
+
